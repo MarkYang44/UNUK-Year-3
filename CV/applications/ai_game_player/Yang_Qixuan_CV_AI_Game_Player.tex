@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=1.35cm,right=1.35cm,top=1.15cm,bottom=1.15cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\setmainfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf,ItalicFont=texgyreheros-italic.otf,BoldItalicFont=texgyreheros-bolditalic.otf]
+\definecolor{navy}{HTML}{17365D}
+\definecolor{linkblue}{HTML}{1F5A94}
+\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue,pdfauthor={Qixuan Yang},pdftitle={Qixuan Yang - AI Game Player Project CV}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\linespread{1.02}
+\setlength{\emergencystretch}{1.5em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=2pt,topsep=2pt,parsep=0pt,before=\RaggedRight}
+\titleformat{\section}{\large\bfseries\color{navy}}{}{0pt}{}[\vspace{-3pt}\color{navy}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\newcommand{\project}[1]{\par\vspace{2pt}\textbf{#1}\par}
+% Standalone source. Compile with XeLaTeX or Tectonic.
+% Experience is supported by the internship summary and the original CV.
+% Project-specific interests describe intended contributions, not completed work.
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Qixuan Yang}\\[3pt]
+{\small\href{mailto:scyqy5@nottingham.ac.uk}{scyqy5@nottingham.ac.uk}\enspace|\enspace\href{mailto:mark44yang@outlook.com}{mark44yang@outlook.com}\\[2pt]
++86 13306576505\enspace|\enspace\href{https://github.com/MarkYang44}{github.com/MarkYang44}}
+\end{center}
+\section*{Education}
+\textbf{University of Nottingham, UK} \hfill Sep 2026 - Jun 2028 (expected)\\
+BSc Computer Science with Artificial Intelligence (2+2), Jubilee Campus.\\[2pt]
+\textbf{University of Nottingham Ningbo China} \hfill 2024 - 2026\\
+First two years of the 2+2 program; GPA: 4.0/4.0 (Top 10\%).\\
+Dean's Scholarship: 2025 - 2026.\quad IELTS: 7.5.
+
+\section*{Profile}
+Computer Science and AI student with experience in model evaluation, stateful AI workflows and Java/Go software development. Interested in applying these skills to a Monte Carlo Tree Search game opponent, with measurable difficulty settings and a clear human-facing interface.
+
+\section*{Internship Experience}
+% Official role category: AI类. Division names are descriptive translations.
+% Level 1: 大数据应用事业部; Level 2: 数据要素事业部.
+\textbf{China Telecom Fufu Information Technology Co., Ltd.}\hfill Jul 2026 - Aug 2026\\
+AI Intern\enspace|\enspace Big Data Applications Division / Data Elements Division
+\project{Factory safety AI assistant and agent prototype}
+\begin{itemize}
+\item Independently built a Python/Streamlit safety-analysis demo using rules, BGE/ChromaDB retrieval and DeepSeek; generated findings with regulation references and corrective-action priorities.
+\item Separated analysis services from the UI and used SQLite for traceable task history; handled retrieval and task failures to make the workflow more robust.
+\item Built a LangGraph plan-and-execute agent prototype with tool routing and state management, gaining experience in coordinating multi-step AI workflows.
+\end{itemize}
+\project{Go chaincode testing and Java backend development}
+\begin{itemize}
+\item Improved Go chaincode reliability through deterministic record ordering, input validation and regression testing; preserved ledger/API compatibility and automated local Fabric startup and verification with Docker Compose.
+\item Developed Spring Boot REST APIs using MyBatis/MySQL aggregation and Nacos configuration; checked integration prerequisites and prepared release handoff documentation.
+\end{itemize}
+
+\section*{Academic Project}
+\textbf{Image Classification System}\enspace|\enspace 2025
+\begin{itemize}
+\item Implemented a modular PyTorch/ResNet18 transfer-learning pipeline covering data preprocessing, model training and evaluation, making experiment components easier to inspect and change.
+\item Applied data augmentation and compared optimizers to evaluate training choices; organized the workflow around repeatable experiments rather than an isolated model demonstration.
+\item Built a Flask REST inference service and containerized the service with Docker, separating model execution from the application interface for reproducible deployment.
+\end{itemize}
+
+\section*{Technical Skills}
+\textbf{Programming:} Java, Python, Go, C/C++, SQL, Shell, MATLAB.\\
+\textbf{AI \& data:} PyTorch, transfer learning, model evaluation, LangGraph/LangChain, RAG, BGE, ChromaDB, Pandas, SQLite.\\
+\textbf{Engineering:} JUnit, Go testing, Git, Docker Compose, WSL/Linux, Spring Boot, Flask, Streamlit, REST APIs; regression tests and integration documentation.
+
+\end{document}

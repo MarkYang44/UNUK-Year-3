@@ -1,0 +1,93 @@
+{
+  "revision": "Simplified internship sections at user request; removed input-format lists, test counts, platform counts and implementation minutiae while retaining core projects, technology and contributions",
+  "native_compilation": "Success observed for all four final sources",
+  "visual_review": "All five final pages rendered and inspected. General CV remains two pages, tailored CVs remain one page each; no clipping, overlap or missing glyphs.",
+  "verification": [
+    {
+      "pdf": "/Users/markyang/Projects/UNUK-Year-3/CV/Yang_Qixuan_CV_2026.pdf",
+      "tex": "/Users/markyang/Projects/UNUK-Year-3/CV/Yang_Qixuan_CV_2026.tex",
+      "pages": 2,
+      "bytes": 124433,
+      "sha256": "ce959b582ff48b48018f7e8935973e1df0b7025ff07e48e44641868d100265dc",
+      "source_sha256": "dc94a46543c734e64ee8c9186bb8790da635b90c6c376307458e0221bb1ab260",
+      "department_and_role_text_verified": true,
+      "unwanted_detail_removed": true,
+      "text_bounds_pt": [
+        [
+          35.43,
+          33.34,
+          559.85,
+          828.18
+        ],
+        [
+          35.43,
+          31.97,
+          565.82,
+          828.18
+        ]
+      ],
+      "encrypted": false,
+      "warnings": []
+    },
+    {
+      "pdf": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/pacman/Yang_Qixuan_CV_Pacman.pdf",
+      "tex": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/pacman/Yang_Qixuan_CV_Pacman.tex",
+      "pages": 1,
+      "bytes": 13883,
+      "sha256": "ccb31c7f4c30c748396836b26aed137a2eef41c3765dc15cf33a7ad0c7ea7fb8",
+      "source_sha256": "eba35d3f1a2cfd78be38297d31ae80648f4f0f56dfc31a9ed32b33fb4c04c77b",
+      "department_and_role_text_verified": true,
+      "unwanted_detail_removed": true,
+      "text_bounds_pt": [
+        [
+          38.27,
+          31.93,
+          557.02,
+          691.7
+        ]
+      ],
+      "encrypted": false,
+      "warnings": []
+    },
+    {
+      "pdf": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/ai_game_player/Yang_Qixuan_CV_AI_Game_Player.pdf",
+      "tex": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/ai_game_player/Yang_Qixuan_CV_AI_Game_Player.tex",
+      "pages": 1,
+      "bytes": 14279,
+      "sha256": "57571246f7a916381bbdfc576442b82b45030fc4d97ec21cf2b245d4721d47ee",
+      "source_sha256": "d170b8b92777db5acf9332c0b812e61b92fbd176680e871d79edf726937367c0",
+      "department_and_role_text_verified": true,
+      "unwanted_detail_removed": true,
+      "text_bounds_pt": [
+        [
+          38.27,
+          31.93,
+          557.02,
+          725.19
+        ]
+      ],
+      "encrypted": false,
+      "warnings": []
+    },
+    {
+      "pdf": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/crisis_app/Yang_Qixuan_CV_Crisis_App.pdf",
+      "tex": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/crisis_app/Yang_Qixuan_CV_Crisis_App.tex",
+      "pages": 1,
+      "bytes": 14116,
+      "sha256": "575c32923710bf948418870d195101292b4fa0cd1739c0eb4a7db8710171b13b",
+      "source_sha256": "791fca0d71d14013fad570da6daaaac17a1400802271ef9308e599af5db64b47",
+      "department_and_role_text_verified": true,
+      "unwanted_detail_removed": true,
+      "text_bounds_pt": [
+        [
+          38.27,
+          31.93,
+          557.02,
+          677.88
+        ]
+      ],
+      "encrypted": false,
+      "warnings": []
+    }
+  ]
+}

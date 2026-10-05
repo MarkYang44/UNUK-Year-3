@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=1.25cm,right=1.25cm,top=1.20cm,bottom=1.20cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+% Compile with XeLaTeX or Tectonic. Fonts are resolved from the TeX bundle;
+% no Windows-only system fonts or additional project files are required.
+\setmainfont{texgyreheros-regular.otf}[
+  BoldFont=texgyreheros-bold.otf,
+  ItalicFont=texgyreheros-italic.otf,
+  BoldItalicFont=texgyreheros-bolditalic.otf]
+\setsansfont{texgyreheros-regular.otf}[
+  BoldFont=texgyreheros-bold.otf,
+  ItalicFont=texgyreheros-italic.otf,
+  BoldItalicFont=texgyreheros-bolditalic.otf]
+\setCJKmainfont{FandolHei-Regular.otf}[BoldFont=FandolHei-Bold.otf]
+\definecolor{navy}{HTML}{17365D}
+\definecolor{linkblue}{HTML}{1F5A94}
+\definecolor{muted}{HTML}{555555}
+\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue,
+  pdftitle={Qixuan Yang - Curriculum Vitae},pdfauthor={Qixuan Yang}}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\scriptsize\color{muted}\thepage}
+\setlength{\footskip}{12pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\linespread{1.06}
+\setlength{\emergencystretch}{1.5em}
+\setlist[itemize]{leftmargin=1.45em,itemsep=3pt,topsep=3pt,parsep=0pt,before=\RaggedRight}
+\titleformat{\section}{\large\bfseries\color{navy}}{}{0pt}{}[\vspace{-3pt}\color{navy}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\newcommand{\entry}[3]{\noindent\makebox[\linewidth][l]{\textbf{#1}\hfill\textbf{#2}}\par\vspace{1.5pt}\textit{#3}\par\vspace{3pt}}
+\newcommand{\contactEN}{University: \href{mailto:scyqy5@nottingham.ac.uk}{scyqy5@nottingham.ac.uk}\enspace|\enspace Personal: \href{mailto:mark44yang@outlook.com}{mark44yang@outlook.com}\\[3pt]+86 13306576505\enspace|\enspace \href{https://github.com/MarkYang44}{github.com/MarkYang44}}
+\newcommand{\contactZH}{学校邮箱：\href{mailto:scyqy5@nottingham.ac.uk}{scyqy5@nottingham.ac.uk}\enspace|\enspace 个人邮箱：\href{mailto:mark44yang@outlook.com}{mark44yang@outlook.com}\\[3pt]+86 13306576505\enspace|\enspace \href{https://github.com/MarkYang44}{github.com/MarkYang44}}
+\newcommand{\pagefillgap}{\vspace{0pt plus .65fill}}
+\newcommand{\pagebottomfill}{\vspace{0pt plus 1fill}}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries\color{navy} Qixuan Yang}\\[3pt]
+  {\small\contactEN}
+\end{center}
+
+\section*{Education}
+\entry{University of Nottingham, UK}{Sep 2026--Jun 2028 (expected)}{BSc Computer Science with Artificial Intelligence (2+2), Jubilee Campus}
+\textbf{University of Nottingham Ningbo China} \hfill \textbf{2024--2026}\\
+First two years of the 2+2 programme; GPA: 4.0/4.0 (Top 10\%).\\
+IELTS: 7.5 \quad CET-4: 627 \quad CET-6: 601
+
+\pagefillgap
+\section*{Internship Experience}
+% Official role category: AI类. Department names below are descriptive translations.
+% Level 1: 大数据应用事业部; Level 2: 数据要素事业部.
+\entry{China Telecom Fufu Information Technology Co., Ltd.}{Jul--Aug 2026}{AI Intern -- Big Data Applications Division / Data Elements Division}
+\begin{itemize}
+  \item \textbf{Factory safety AI assistant:} Independently built a local Python/Streamlit demo combining rules, Chinese RAG and DeepSeek to analyze inspection findings, cite regulations and prioritize corrective actions. Used BGE/ChromaDB and SQLite for retrieval and traceable task history.
+  \item \textbf{Healthcare portal backend:} Developed Spring Boot REST APIs for homepage configuration, business metrics and news using MyBatis/MySQL and Nacos. Checked database and gateway compatibility and documented integration requirements and release handoffs.
+  \item \textbf{Hyperledger Fabric platform:} Rebuilt the local environment with WSL and Docker Compose and automated startup and verification. Fixed Go chaincode defects to improve reliability while preserving ledger and API compatibility.
+  \item \textbf{Additional work:} Built a LangGraph plan-and-execute agent prototype; contributed compliance-rule acceptance cases and OpenSandbox offline scripts for runtime selection, validation and rollback.
+\end{itemize}
+
+\pagefillgap
+\section*{Selected Academic Project}
+\entry{Image Classification System}{2025}{PyTorch, Transfer Learning, Flask, Docker}
+\begin{itemize}
+  \item Built a modular ResNet18 transfer-learning pipeline covering data preprocessing, training and evaluation; compared optimizers and applied data augmentation.
+  \item Containerized a Flask REST inference service with Docker for reproducible deployment.
+\end{itemize}
+
+\pagefillgap
+\section*{Technical Skills}
+\textbf{Languages:} Python, Java, Go, C/C++, SQL, Shell, MATLAB\\
+\textbf{AI \& Data:} PyTorch, Streamlit, LangChain/LangGraph, RAG, BGE, ChromaDB, Pandas, SQLite\\
+\textbf{Backend:} Spring Boot, MyBatis-Plus, MySQL, Nacos, REST APIs, Flask, MinIO\\
+\textbf{Engineering:} Hyperledger Fabric, Docker Compose, WSL/Linux, Git, Shell scripting, JUnit
+
+\pagefillgap
+\section*{Awards}
+\begin{itemize}
+  \item Dean's Scholarship (2025--26)
+\end{itemize}
+\pagebottomfill
+
+\newpage
+\begin{center}
+  {\LARGE\bfseries\color{navy} 杨企轩}\\[3pt]
+  {\small\contactZH}
+\end{center}
+
+\section*{教育背景}
+\entry{英国诺丁汉大学}{2026.09--2028.06（预计毕业）}{计算机科学与人工智能本科（2+2 学制），Jubilee 校区}
+\textbf{宁波诺丁汉大学} \hfill \textbf{2024--2026}\\
+2+2 学制前两年；GPA：4.0/4.0（专业前 10\%）。\\
+雅思：7.5 \quad CET-4：627 \quad CET-6：601
+
+\pagefillgap
+\section*{实习经历}
+\entry{中电福富信息科技有限公司}{2026.07--2026.08}{职位：AI类（实习）；一级部门：大数据应用事业部；二级部门：数据要素事业部}
+\begin{itemize}
+  \item \textbf{工厂安全隐患 AI 助手：}独立开发 Python/Streamlit 本地 Demo，结合规则匹配、中文 RAG 与 DeepSeek，分析检查清单、引用内部规定并生成整改优先级；使用 BGE/ChromaDB 与 SQLite 实现知识检索和任务历史追溯。
+  \item \textbf{医疗健康专区后端：}基于 Spring Boot 开发首页配置、业务指标与新闻相关的 REST API，使用 MyBatis/MySQL 与 Nacos 完成数据聚合和配置管理；核查数据库及网关兼容性，整理联调与发布交接材料。
+  \item \textbf{Hyperledger Fabric 平台：}使用 WSL 与 Docker Compose 重建本地运行环境，实现自动启动与验证；修复 Go 存证链码缺陷，提升运行可靠性，并保持账本及 API 兼容。
+  \item \textbf{补充技术实践：}开发 LangGraph 规划执行智能体原型；参与合规规则验收，编写 OpenSandbox 运行时选择、验证与回滚的离线交付脚本。
+\end{itemize}
+
+\pagefillgap
+\section*{项目经历}
+\entry{图像分类系统开发}{2025}{PyTorch、迁移学习、Flask、Docker}
+\begin{itemize}
+  \item 基于 ResNet18 迁移学习构建模块化训练与评估流水线，实现数据预处理、数据增强及优化器对比。
+  \item 使用 Docker 容器化部署 Flask REST 推理服务，支持可重复部署。
+\end{itemize}
+
+\pagefillgap
+\section*{技术能力}
+\textbf{编程语言：} Python、Java、Go、C/C++、SQL、Shell、MATLAB\\
+\textbf{AI 与数据：} PyTorch、Streamlit、LangChain/LangGraph、RAG、BGE、ChromaDB、Pandas、SQLite\\
+\textbf{后端开发：} Spring Boot、MyBatis-Plus、MySQL、Nacos、REST API、Flask、MinIO\\
+\textbf{工程工具：} Hyperledger Fabric、Docker Compose、WSL/Linux、Git、Shell 脚本、JUnit
+
+\pagefillgap
+\section*{获奖情况}
+\begin{itemize}
+  \item 院长奖学金（2025--26）
+\end{itemize}
+\pagebottomfill
+\end{document}
