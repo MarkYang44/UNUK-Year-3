@@ -40,8 +40,10 @@ theorem q02 : (P → Q) → (P → P → Q) := by
 
 theorem q03 : (P → P → Q) ↔ (P → Q) := by
   constructor
-  · exact q01 P Q
-  · exact q02 P Q
+  · intro ppq p
+    exact ppq p p
+  · intro pq p p2
+    exact pq p
 
 theorem q04 : P ∧ True ↔ P := by
   constructor
@@ -56,8 +58,8 @@ theorem q04 : P ∧ True ↔ P := by
 
 theorem q05 : (P ∧ Q) ∧ R ↔ P ∧ (Q ∧ R) := by
   constructor
-  · intro pqr
-    cases pqr with
+  · intro pq_r
+    cases pq_r with
     | intro pq r =>
       cases pq with
       | intro p q =>
@@ -66,8 +68,8 @@ theorem q05 : (P ∧ Q) ∧ R ↔ P ∧ (Q ∧ R) := by
         · constructor
           · exact q
           · exact r
-  · intro pqr
-    cases pqr with
+  · intro p_qr
+    cases p_qr with
     | intro p qr =>
       cases qr with
       | intro q r =>
@@ -91,8 +93,8 @@ theorem q06 : P ∨ False ↔ P := by
 
 theorem q07 : (P ∨ Q) ∨ R ↔ P ∨ (Q ∨ R) := by
   constructor
-  · intro pqr
-    cases pqr with
+  · intro pq_r
+    cases pq_r with
     | inl pq =>
       cases pq with
       | inl p =>
@@ -106,8 +108,8 @@ theorem q07 : (P ∨ Q) ∨ R ↔ P ∨ (Q ∨ R) := by
       right
       right
       exact r
-  · intro pqr
-    cases pqr with
+  · intro p_qr
+    cases p_qr with
     | inl p =>
       left
       left
@@ -138,8 +140,8 @@ theorem q08 : (P ↔ Q) ↔ (Q ↔ P) := by
       · exact qp
 
 theorem q09 : (P ↔ Q) → ((P → R) ↔ (Q → R)) := by
-  intro pq
-  cases pq with
+  intro p_q
+  cases p_q with
   | intro pq qp =>
     constructor
     · intro pr q
@@ -151,8 +153,8 @@ theorem q09 : (P ↔ Q) → ((P → R) ↔ (Q → R)) := by
 
 theorem q10 : (P ∨ Q ↔ P ∧ Q) ↔ (P ↔ Q) := by
   constructor
-  · intro h
-    cases h with
+  · intro pq_pq
+    cases pq_pq with
     | intro forward backward =>
       constructor
       · intro p
@@ -171,8 +173,8 @@ theorem q10 : (P ∨ Q ↔ P ∧ Q) ↔ (P ↔ Q) := by
         cases pq with
         | intro p q =>
           exact p
-  · intro h
-    cases h with
+  · intro p_q
+    cases p_q with
     | intro pq qp =>
       constructor
       · intro porq

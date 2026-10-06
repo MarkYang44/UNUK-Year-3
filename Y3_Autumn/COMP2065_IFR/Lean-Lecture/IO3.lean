@@ -56,6 +56,21 @@ theorem curry: (P → Q → R) ↔ (P ∧ Q → R) := by
      -/
 
 
+theorem curry2 : (P → Q → R) ↔ (P ∧ Q → R) := by
+  constructor
+  · intro pqr pq
+    cases pq with
+    | intro p q =>
+      apply pqr
+      assumption
+      assumption
+  · intro pqr p q
+    apply pqr
+    constructor
+    · assumption
+    · assumption
+
+
 example : P → P ∨ Q := by
   intro p
   left
