@@ -1,0 +1,15 @@
+{
+  "reference": "/Users/markyang/Projects/UNUK-Year-3/Y3_Autumn/COMP2002_GRP/Team26_UoN_AiGamePlayer_EoI.docx",
+  "reference_sha256": "3ae1ac7f71f6102c341bf1042092326a34c4ed6d1c9a3850b915565944397844",
+  "output": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/ai_game_player/Team26_UoN_AiGamePlayer_EoI_Draft.docx",
+  "bid_summary_words_including_labels": 492,
+  "prose_words_excluding_placeholder_lines": 411,
+  "highlighted_blanks": 7,
+  "only_bid_summary_modified": true,
+  "all_other_package_parts_preserved": true,
+  "final_pages": 2,
+  "all_pages_rendered_and_visually_reviewed": true,
+  "source_unchanged": true,
+  "summary_layout": "Contiguous merged rows within the original summary box allow paragraph-safe pagination",
+  "sha256": "d2bcfeb89a4e7c2ab44d1a4413435240a6b0b4ed0c0e80c11a3b98fd803ac348"
+}

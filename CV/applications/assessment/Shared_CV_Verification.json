@@ -1,0 +1,25 @@
+{
+  "revision": "Single shared CV for Pacman, AI Game Player and Crisis Reporting App, aligned with uploaded lecture guidance",
+  "native_compilation": "Success observed for the final standalone source",
+  "visual_review": "Final page rendered and inspected; readable, with no clipping, overlap or missing glyphs",
+  "lecture_rubric_boundary": "Slide 11 contains a cropped low-resolution marking-table image; alignment uses fully readable lecture guidance, not an independently supplied complete rubric",
+  "careerset": "This version has not been rescored",
+  "verification": {
+    "pdf": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/shared/Yang_Qixuan_CV_Group_Projects.pdf",
+    "tex": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/shared/Yang_Qixuan_CV_Group_Projects.tex",
+    "pages": 1,
+    "bytes": 14537,
+    "sha256": "216095ad7dc50888972c07799da067f5a9e82102ea75dde361853f1054bc19e1",
+    "source_sha256": "0ecc29b88cae6b03e7cfe9fe84c13192b18a807c7372653ff2ce5b10acbeb870",
+    "text_bounds_pt": [
+      38.27,
+      31.93,
+      557.02,
+      764.78
+    ],
+    "department_and_role_text_verified": true,
+    "unwanted_detail_removed": true,
+    "encrypted": false,
+    "warnings": []
+  }
+}

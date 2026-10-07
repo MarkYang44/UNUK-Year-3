@@ -1,0 +1,15 @@
+{
+  "reference": "/Users/markyang/Downloads/Pacman EOI Plan.docx",
+  "source_sha256": "be5575752de501e3807439f1df66829de5470d8d98372e3284ecd1b8961b1b24",
+  "output": "/Users/markyang/Projects/UNUK-Year-3/CV/applications/ai_game_player/AI_Game_Player_EOI_Plan_Gomoku_Tentative.docx",
+  "words": 539,
+  "blank_items": 7,
+  "tentative_game_explicit": true,
+  "section_geometry_preserved": true,
+  "non_document_package_parts_unchanged": true,
+  "pages": 3,
+  "all_pages_rendered_and_inspected": true,
+  "simple_provisional_game_design_verified": true,
+  "source_unchanged": true,
+  "output_sha256": "ee889d94aa49807e69009e33aacc7fe2c93785c3a6c492b493456d003ed2230b"
+}

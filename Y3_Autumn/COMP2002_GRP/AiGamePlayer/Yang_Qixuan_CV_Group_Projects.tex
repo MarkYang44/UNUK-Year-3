@@ -1,0 +1,79 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=1.35cm,right=1.35cm,top=1.15cm,bottom=1.15cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\setmainfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf,ItalicFont=texgyreheros-italic.otf,BoldItalicFont=texgyreheros-bolditalic.otf]
+\definecolor{navy}{HTML}{17365D}
+\definecolor{linkblue}{HTML}{1F5A94}
+\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue,pdfauthor={Qixuan Yang},pdftitle={Qixuan Yang - Software Engineering Group Projects CV}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\linespread{1.02}
+\setlength{\emergencystretch}{1.5em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=2pt,topsep=2pt,parsep=0pt,before=\RaggedRight}
+\titleformat{\section}{\large\bfseries\color{navy}}{}{0pt}{}[\vspace{-3pt}\color{navy}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\newcommand{\project}[1]{\par\vspace{2pt}\textbf{#1}\par}
+% Standalone XeLaTeX/Tectonic source for Pacman, AI Game Player and Crisis App.
+% Past experience is supported by the internship summary and existing CVs.
+% Profile interests are intended contributions, not completed game projects.
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Qixuan Yang}\\[3pt]
+{\small\href{mailto:scyqy5@nottingham.ac.uk}{scyqy5@nottingham.ac.uk}\enspace|\enspace\href{mailto:mark44yang@outlook.com}{mark44yang@outlook.com}\\[2pt]
++86 13306576505\enspace|\enspace\href{https://github.com/MarkYang44}{github.com/MarkYang44}}
+\end{center}
+
+\section*{Education}
+\textbf{University of Nottingham, UK} \hfill Sep 2026 - Jun 2028 (expected)\\
+BSc Computer Science with Artificial Intelligence (2+2), Jubilee Campus.\\[2pt]
+\textbf{University of Nottingham Ningbo China} \hfill 2024 - 2026\\
+First two years of the 2+2 program; GPA: 4.0/4.0 (Top 10\%).\\
+Dean's Scholarship: 2025 - 2026.\quad IELTS: 7.5.
+
+\section*{Profile}
+Computer Science and AI student with hands-on Java, Python and Go development, AI prototyping and system integration experience. Interested in applying modular design, reliable state handling and model evaluation to games, AI opponents and user-facing reporting applications.
+
+\section*{Relevant Experience}
+% Official role category: AI类. Division names are descriptive translations.
+% Level 1: 大数据应用事业部; Level 2: 数据要素事业部.
+\textbf{China Telecom Fufu Information Technology Co., Ltd.}\hfill Jul 2026 - Aug 2026\\
+AI Intern\enspace|\enspace Big Data Applications Division / Data Elements Division
+
+\project{Factory safety AI assistant and AI workflows}
+\begin{itemize}
+\item Independently built a Python/Streamlit safety-analysis demo combining rules, RAG and DeepSeek to identify hazards, cite regulations and prioritize corrective actions; used ChromaDB and SQLite for retrieval and traceable task history.
+\item Separated analysis services from the UI and handled retrieval and task failures. Built a LangGraph plan-and-execute agent prototype with tool routing and state management.
+\end{itemize}
+
+\project{Healthcare portal backend}
+\begin{itemize}
+\item Developed Java/Spring Boot REST APIs for homepage configuration, business metrics and news; implemented MyBatis/MySQL data aggregation, Nacos configuration and error handling.
+\item Clarified database and gateway dependencies with frontend and deployment colleagues and prepared integration and release documentation, supporting coordinated delivery within an existing microservice system.
+\end{itemize}
+
+\project{Hyperledger Fabric platform and Go chaincode}
+\begin{itemize}
+\item Fixed record-ordering and input-validation defects in Go chaincode; added regression coverage while preserving existing API and ledger compatibility.
+\item Rebuilt the local platform with WSL/Linux and Docker Compose and automated startup and end-to-end checks, strengthening reproducible integration and verification.
+\end{itemize}
+
+\section*{Academic Project}
+\textbf{Image Classification System}\enspace|\enspace 2025
+\begin{itemize}
+\item Built a modular PyTorch/ResNet18 transfer-learning pipeline for preprocessing, training and evaluation; applied data augmentation and compared optimizers through repeatable experiments.
+\item Containerized a Flask REST inference service with Docker, separating model execution from the application interface for reproducible deployment.
+\end{itemize}
+
+\section*{Technical Skills}
+\textbf{Programming:} Java, Python, Go, C/C++, SQL, Shell, MATLAB.\\
+\textbf{AI \& data:} PyTorch, model evaluation, LangGraph/LangChain, RAG, ChromaDB, Pandas, SQLite.\\
+\textbf{Backend \& interfaces:} Spring Boot, REST APIs, MyBatis-Plus, MySQL, Nacos, Flask, Streamlit.\\
+\textbf{Engineering:} Git, Docker Compose, WSL/Linux, JUnit, Go testing, regression testing, integration documentation, Hyperledger Fabric.
+
+\end{document}
