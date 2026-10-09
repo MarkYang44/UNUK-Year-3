@@ -1,0 +1,82 @@
+{
+  "file": "/Users/markyang/Projects/UNUK-Year-3/Y3_Autumn/COMP2013_DMS/lab/output/COMP2013_Lab2_DevOps_Reference.pptx",
+  "sha256": "24b75bbba74b6060652619303187dcccbff8cfe1c99d63b147a5171566631b9d",
+  "slide_count": 19,
+  "native_application": "Microsoft PowerPoint for macOS",
+  "native_export": "/Users/markyang/Projects/UNUK-Year-3/Y3_Autumn/COMP2013_DMS/lab/.devops-build/NativeQA.pdf",
+  "native_pages_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "visual_findings": [],
+  "native_table_warning_review": {
+    "slides": [
+      4,
+      12,
+      14,
+      15,
+      17
+    ],
+    "resolution": "Actual PowerPoint local PDF export was rendered and every page inspected; no table/footer overlap or clipping."
+  },
+  "coverage": {
+    "team_details": [
+      2
+    ],
+    "case_facts": [
+      3
+    ],
+    "task1_challenges_assumptions_implications": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "task2_executable_organizational_technical_plan": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "task3_positive_negative_evaluation": [
+      14
+    ],
+    "task3_new_learning_actions": [
+      15
+    ],
+    "knowledge_and_culture": [
+      16
+    ],
+    "task3_revised_plan_and_handover": [
+      17,
+      18
+    ],
+    "sources_and_assumptions": [
+      19
+    ]
+  },
+  "known_incomplete_administrative_fields": [
+    "team name",
+    "team number"
+  ],
+  "reference_book_consulted": false
+}

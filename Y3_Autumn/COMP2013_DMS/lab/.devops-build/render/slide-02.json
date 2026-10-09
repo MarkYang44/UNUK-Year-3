@@ -1,0 +1,9 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/kknoz0","index":1,"layout":{"id":"ly/p83mt83u","name":"Title and Content"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/c761wjmt","kind":"textbox","name":"Title 1","position":{"left":88,"top":38.33,"width":1104,"height":139.17},"text":"Team details","style":{"fontSize":58.67,"typeface":"Aptos Display","color":"#000000","alignment":"left"}},
+{"id":"sh/x8f25o3e","kind":"textbox","name":"members-label","position":{"left":88,"top":192,"width":1104,"height":35},"text":"Team members","style":{"fontSize":28,"typeface":"Aptos","color":"#C00000","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/y9ojyt4z","kind":"textbox","name":"members","position":{"left":88,"top":248,"width":1104,"height":178},"text":"Qixuan Yang (20719443)\nRonghao Hu (20719451)\nHanbo Zhao (20719456)","style":{"fontSize":37.33,"typeface":"Aptos","color":"#000000","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/zaxk7elk","kind":"textbox","name":"team-admin-label","position":{"left":88,"top":485,"width":1104,"height":35},"text":"Team name / number","style":{"fontSize":28,"typeface":"Aptos","color":"#C00000","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/kb610jm5","kind":"textbox","name":"team-admin","position":{"left":88,"top":538,"width":1104,"height":64},"text":"Not provided - complete before submission","style":{"fontSize":32,"typeface":"Aptos","color":"#000000","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/lcf29o3q","kind":"textbox","name":"page-number","position":{"left":1165,"top":693,"width":38,"height":22},"text":"02","style":{"fontSize":16,"typeface":"Aptos","color":"#7F7F7F","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

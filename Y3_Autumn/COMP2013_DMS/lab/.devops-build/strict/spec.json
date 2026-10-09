@@ -1,0 +1,238 @@
+[
+  {
+    "changes": [],
+    "notes": "Present the hypothetical company transformation. The plan covers Flow, Feedback, and continuous Experimentation/Learning. Actions, staffing, deadlines and targets are proposals; no measured improvements are claimed. Sources: [1] COMP2013 Lab 2 DevOps, pp. 1-3; [2] COMP2013 Lecture 02, original slides 24, 27-44, 51-61. The supplied template controls slide formatting. The DevOps Handbook was recommended but not independently accessed."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 0,
+        "text": [
+          "Team name: not provided"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 1,
+        "text": [
+          "Team number: not provided"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 3,
+        "text": [
+          "Qixuan Yang (20719443)"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 4,
+        "text": [
+          "Ronghao Hu (20719451)"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 5,
+        "text": [
+          "Hanbo Zhao (20719456)"
+        ]
+      }
+    ],
+    "notes": "Member information supplied by the user. Team name and number are not known; complete them before submission. Organizational role owners in the plan are company staff, not these three students."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 0,
+        "text": [
+          "About 100 people at one site; three Dev teams of 10-15 people; three web apps share a database. Teams use their own processes/tools. Dev tests functions; Test checks integration/acceptance manually; Ops deploys to Google Cloud. Sales collects needs; communication is mainly informal email."
+        ]
+      }
+    ],
+    "notes": "Source [1], pp. 1-2. These are case facts. The three applications share some data through a common database; the brief does not say every table or service is shared. The organization diagram has CEO, Staff, Development, Test, Operations, Sales and other departments.\nNo business domain, baseline deployment frequency or cultural diagnosis is provided in the case. Separate these unknowns from given facts."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 0,
+        "text": [
+          "Communication: lost priorities and decisions. Business/data: availability needs and shared-schema risks. Delivery: manual test queues and Dev-Test-Ops handoffs. Learning: possible knowledge silos and conflicting incentives. Each is a risk to investigate, not a confirmed failure."
+        ]
+      }
+    ],
+    "notes": "Challenge register: (1) communication, from informal email; (2) business/data dependencies, from three applications sharing data through one database; (3) delivery bottlenecks, from manual integration/acceptance testing and the Test-to-Ops handoff. Potential learning/culture problems are considered under communication and Task 3. Assumptions are stated on slides 5-7. There is no claim that silos or a blame culture have been observed. Interviews, tool inspection and a value-stream map in weeks 1-2 validate the assumptions. Sources: [1] COMP2013 Lab 2 DevOps, pp. 1-3; [2] COMP2013 Lecture 02, original slides 24, 27-44, 51-61. The supplied template controls slide formatting. The DevOps Handbook was recommended but not independently accessed."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 1,
+        "text": [
+          "A1: no shared backlog or decision log; incentives may differ between Dev and Ops."
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 6,
+        "text": [
+          "Priorities and context may be lost; conflicting goals discourage sharing. Agree one backlog, named owners and shared outcomes."
+        ]
+      }
+    ],
+    "notes": "Sources: [1], pp. 1-2; [2], lecture slides 24, 26, 42-44. A1-A3 are explicit assumptions, not stated case facts. Week 1 interviews include representatives from all departments and the CEO; inspect current tools and incentives. If an adequate shared backlog exists, improve it rather than replace it. If incentives are already aligned, retain them. Knowledge creation: record competing perspectives in a value-stream map and shared decisions.\n\nSources: [1], Task 2; [2], lecture slides 24, 28-36, 44. P1 addresses C1 and C3. WIP=3 is a starting experiment, not a universal limit; adjust using queue data. Definition of done includes peer review, required automated checks, documented migration impact, release/rollback instructions and a monitoring owner. Department heads retain staffing and specialist standards; the cross-functional pilot squad owns delivery. Escalation: a blocked item older than one working day goes to the transformation lead. Daily 10-minute squad check, weekly 30-minute review. Record decisions outside email.\nThe incentive assumption is conditional. CEO and department heads should ask staff whether they can report mistakes safely and inspect how teams are rewarded. Record results instead of asserting the culture is unsuitable. Knowledge creation: interviews expose different perspectives; the value-stream map shows waiting; documented decisions preserve organizational learning."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 1,
+        "text": [
+          "A2: assume customer-facing subscription services need reliable releases."
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 3,
+        "text": [
+          "A3: a shared-schema change may break another application."
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 5,
+        "text": [
+          "Availability can affect revenue; schema compatibility affects all three apps. Use staged releases and versioned, compatible migrations."
+        ]
+      }
+    ],
+    "notes": "A2 is a deliberate business-domain assumption, permitted by the Lab brief. The original template uses online games only as an example; that is not a case fact. Confirm the real business model and reliability needs before setting live service guardrails. A3 is a dependency risk hypothesis, derived from the given common database. Coordinate schema changes, use a test database and verify all three applications against proposed migrations. Add compatible fields first, migrate callers, then remove obsolete schema only after all applications pass. A full database split is deferred because cost and feasibility are unknown. Source [1], pp. 1-2; [2], lecture slides 28, 37-38. A4-A5 are assumptions. Shared storage is a stated fact, but incompatible release conventions and breaking schema changes are not confirmed. P2 and P3 address these risks. Compatibility policy: add compatible columns or tables first, migrate callers, then remove old schema only when all applications are verified. Backups, restore rehearsals and contract tests are necessary before production changes. A complete database separation is not assumed achievable within 12 weeks.\n\nSources: [1], Task 2; [2], lecture slides 54-61. P3 addresses C2 and C3. Appoint a database owner from Ops in week 1, with Dev/Test contributors. Terraform is a proposal, not a requirement or claim about current infrastructure. Concrete pilot guardrail proposal: stop promotion/rollback when application error rate exceeds 1% for 5 minutes, or p95 latency rises >20% above the measured pre-release baseline for 10 minutes. Ops and Sales must calibrate guardrails to traffic and service requirements before the first production release. Use recorded health checks when traffic is low. Do not claim those thresholds suit every app. Rollback objective: restore the last known-good app artifact within 10 minutes in a drill. Data recovery follows a separate backup/restore procedure; record backup completion, recovery point and restore duration. Acceptance requires all three applications passing schema compatibility tests and two successful staging deployment/rollback drills. The first live pilot release requires P2 and P3 acceptance plus a tested runbook."
+  },
+  {
+    "changes": [
+      {
+        "shape": 0,
+        "p": 0,
+        "text": [
+          "Task 1 - Challenge 3 – Release queues"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 1,
+        "text": [
+          "A4: manual tests and deployment knowledge have limited capacity."
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 4,
+        "text": [
+          "Queues delay releases; larger batches increase rework. Automate critical checks, limit WIP and share release ownership."
+        ]
+      }
+    ],
+    "notes": "Source [1], p. 2; [2], lecture slides 28-36, 58-60. Manual integration/acceptance testing and the Test-to-Ops handoff are given. Capacity limitations and manual deployment are assumptions. If deployment is already automated, retain it and document missing checks. A CI/CD platform alone does not solve the queue. Test specialists help developers create repeatable tests, then focus manual work on exploratory and user acceptance testing. Value-stream analysis should distinguish touch time from waiting time.\nA4 groups two possibilities: a test-capacity constraint and person-specific deployment knowledge. Neither is confirmed by the case. Measure waiting and inspect deployment scripts before changing processes. If automated deployment already works, reuse it. The pilot focuses on the actual end-to-end constraint, not maximizing developer utilization."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 0,
+        "text": [
+          "Name : ",
+          "Shared backlog and pilot squad"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 2,
+        "text": [
+          "Purpose, actions, owner and timeline"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 3,
+        "text": [
+          "W1-2: lead + Sales map queues and baseline metrics. Dev/Test/Ops form a pilot squad; Sales owns priorities. Use one board, WIP <= 3 and shared done/release rules. Continue development; measure waiting weekly. Goal: fewer handoffs and lost decisions."
+        ]
+      }
+    ],
+    "notes": "P1 operational plan. Week 1: CEO appoints the transformation lead and accountable Dev, Test, Ops and Sales owners. Interview all roles, inspect current tools/incentives and map request-to-production waiting. Deliver a value-stream map, baseline dashboard and agreed priorities. Week 2: select one app and one critical journey; set up a cross-functional pilot with two developers, one tester and one Ops engineer at 50% time each, plus transformation lead at 20%; Sales product owner prioritizes weekly. Confirm capacity and staging/cloud budget before work. Pilot staffing is a proposal (2.2 FTE excluding Sales), not a given fact. Do not stop the whole company; reduce feature commitments to reflect reserved capacity.\nUse existing supported issue/wiki tools if sufficient. Start with WIP <=3 active changes, daily 10-minute unblock check and weekly 30-minute review. Any blocked item older than one working day goes to the transformation lead. Definition of done: peer review, passing automated checks, documented migration impact, release/rollback steps and a monitoring owner. Documents: squad charter, backlog/WIP policy, decision log and definition of done. Knowledge created: queue bottlenecks and clarified priorities; share in the board/wiki and cross-role reviews.\nSources: [1], Task 2; [2], lecture slides 27-36 and 61. All numerical outcomes are proposed, not measured or promised. Compare representative changes, report sample counts and investigate small samples. The 12-week plan assumes CEO support, access to code/cloud systems and a suitable pilot; confirm in week 1. If these are absent, revise schedule before work begins. No company-wide development freeze is proposed.\n\nSources: [1], Tasks 2-3; [2], lecture slides 38-44 and 61. P4 is the Second Way and supports knowledge creation. Start collection in weeks 1-2, retain dashboards throughout rollout. Use Cloud Monitoring or existing supported monitoring, a versioned release log and shared review notes. CEO and squad review delivery/reliability together rather than reward feature count alone. Track test queue time and blocked-item age to check whether work merely moved between queues. Definitions are consistent within this presentation. Production recovery time and a planned rollback drill are different measurements. Report change failure rate as a fraction with sample counts, especially for low deployment frequency. These are design targets, not historical evidence. Baseline sources/coverage should be documented; do not invent missing timestamps.\nProposed week-12 targets: pilot median commit-to-production time 50% below the week-1/2 baseline, at least weekly gated deployments, no increase in change failure rate, and a <=10-minute application rollback drill. Record actual baselines and sample counts before judging success. Collect production deployment timestamps, commit timestamps, linked incidents, restoration timestamps and support themes weekly. Sales feeds findings back into the backlog. Recovery time and planned rollback-drill time are distinct. Sources: [1] COMP2013 Lab 2 DevOps, pp. 1-3; [2] COMP2013 Lecture 02, original slides 24, 27-44, 51-61. The supplied template controls slide formatting. The DevOps Handbook was recommended but not independently accessed."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 0,
+        "text": [
+          "Name : ",
+          "Safe delivery pilot"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 2,
+        "text": [
+          "Purpose, actions, owner and timeline"
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 3,
+        "text": [
+          "W3-5: Dev/Test automate build, unit and all-app integration checks. W4-6: Ops tests staging, compatible migrations and rollback. Gate production release; monitor health. W7-8: review pilot evidence. Lead scales to other teams in W9-12 only if gates pass."
+        ]
+      }
+    ],
+    "notes": "P2 technical plan (weeks 3-5): Dev lead versions code, pipeline and deployment scripts; integrates small changes daily and requires peer review. Test lead selects critical regression and acceptance checks. Suggested pilot tools: Git and GitHub Actions; retain an existing adequate CI tool. Path: commit -> build -> unit tests -> integration tests on a dedicated synthetic/sanitized test database -> acceptance checks -> versioned artifact -> staging. Failed checks return to their owner and block release. Promote the same artifact through environments. Any schema change triggers compatibility tests for all three apps. Acceptance: a fresh checkout builds; deliberate failing tests stop promotion; critical journey passes in staging; reports and test ownership are accessible. Keep manual exploratory acceptance testing.\nP3 release plan (weeks 4-6): Ops owns reproducible Google Cloud staging, versioned infrastructure (proposed Terraform), health monitoring, application rollback and data restore. Appoint an Ops database owner in week 1. Rehearse two successful staging release/rollback drills and a separate database restore; record restoration times and backup recovery point. No incompatible schema removal in the pilot. Application rollback does not undo data changes. Produce infrastructure config, migration policy, release/restore runbook, alert contacts and release checklist.\nFirst production release gate (week 6): required pipeline checks and all-app schema tests pass; two staging release/rollback drills succeed; Ops/Test/Sales approve the checklist, health thresholds and alert ownership. Release one small change and observe errors/latency. Proposed stop/rollback thresholds for calibration before live use: >1% errors for 5 minutes, or p95 latency >20% above measured baseline for 10 minutes. Low traffic requires health checks and appropriate thresholds. Ops owns incident response and the named release approver.\nWeeks 7-8: collect two weeks of production evidence and review delivery/reliability and support themes. Onboard second team in weeks 9-10, third in weeks 11-12 only if pilot checks/runbooks work, receiving teams understand them, and no severe release-caused incident remains unresolved. CEO reviews resources and outcome trade-offs. Postpone scaling when gates fail; fix the observed constraint. Sources: [1] COMP2013 Lab 2 DevOps, pp. 1-3; [2] COMP2013 Lecture 02, original slides 24, 27-44, 51-61. The supplied template controls slide formatting. The DevOps Handbook was recommended but not independently accessed."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 1,
+        "text": [
+          "Boards and tests support learning; rigid gates and personal metric rankings may discourage experiments."
+        ]
+      },
+      {
+        "shape": 1,
+        "p": 5,
+        "text": [
+          "Protect learning time, delegate staging trials, and review failures without blame; keep production release checks."
+        ]
+      }
+    ],
+    "notes": "Task 3 evaluation of P1-P4:\nP1 board/squad: positive - visible queues and cross-role perspectives create knowledge; negative - WIP rules and feature pressure may exclude learning. Revision: reserve 10% of allocated pilot time, then test WIP 3 versus 2 with comparable work and record results.\nP2 tests: positive - rapid defect evidence and repeatable learning; negative - green tests can create false assurance. Revision: pair Dev/Test, retain exploratory acceptance testing and turn escaped defects into regression tests.\nP3 gates/tools: positive - reproducible releases and logs enable safe experiments; negative - rigid standards and slow approvals can block trials. Revision: delegate low-risk non-production experiments to the squad, document justified tool exceptions and review gates without dropping production readiness.\nP4 metrics: positive - delivery/reliability trends expose improvement opportunities; negative - personal rankings incentivize gaming and hidden failures. Revision: use team outcomes with sample sizes, context and no blame.\nCulture suitability is unknown. Validate A1 through interviews, reward-policy review and a brief anonymous trust survey at baseline/monthly. CEO models early risk reporting and investigates system causes. If incentives conflict, align them around shared delivery/reliability; reinforce helpful existing practices when present. Sources: [1] COMP2013 Lab 2 DevOps, pp. 1-3; [2] COMP2013 Lecture 02, original slides 24, 27-44, 51-61. The supplied template controls slide formatting. The DevOps Handbook was recommended but not independently accessed."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 1,
+        "text": [
+          "From W2, squad lead reserves 10% of pilot time for a logged experiment every two weeks: hypothesis, baseline, staging trial, success/stop rule and decision. From W3, Ops/Test review incidents or near misses within two working days and assign corrective actions. Dev/Test run weekly cross-role demos and a monthly all-team session; publish lessons in a shared wiki and verify another team reuses them."
+        ]
+      }
+    ],
+    "notes": "New Third Way actions: L1 (from week 2, squad lead) protects 10% of already allocated pilot time. Record a hypothesis, baseline, bounded trial, success criterion, stop condition and adopt/reject decision every two weeks. Example: running integration checks per merge should reduce test queue age without more defects; compare two weeks with the baseline and show sample counts. Retain negative findings. A second experiment compares WIP 3 and 2 for comparable changes; revert if queue age or reliability worsens.\nL2 (from week 3, Ops/Test leads) reviews incidents and near misses within two working days without blame. Publish timeline, contributing system factors, actions, owners and dates. Close an action only after a verified regression test, runbook change or drill. Staging resilience drills begin only after recovery rehearsal, with a named supervisor, stop/restore procedure and isolated/sanitized data. No unsupervised production failure injection.\nL3 (from week 3, Dev/Test leads) uses pairing, a weekly 30-minute demo and a monthly all-team community. Individual findings become a test, runbook or decision record, reviewed across roles, indexed in a shared wiki and adopted by another team. Monthly review verifies actual reuse, not document count. Rotate demo ownership and keep unsuccessful experiments visible. Knowledge sources: queue maps, failing tests, release/restore drills, user feedback and bounded experiments. CEO protects learning and rewards early sharing, shared ownership and reliable delivery. Sources: [1] COMP2013 Lab 2 DevOps, pp. 1-3; [2] COMP2013 Lecture 02, original slides 24, 27-44, 51-61. The supplied template controls slide formatting. The DevOps Handbook was recommended but not independently accessed."
+  },
+  {
+    "changes": [
+      {
+        "shape": 1,
+        "p": 1,
+        "text": [
+          "W1-2: baseline, shared backlog and trust charter. W3-5: CI/testing plus pairing. W6-8: small releases, monitoring and experiments. W9-12: scale after gates; share lessons. Lead protects 10% learning time; CEO reviews delivery and reliability."
+        ]
+      }
+    ],
+    "notes": "Final integrated plan supersedes the initial sequence. Weeks 1-2: Flow - map queues, nominate owners, shared backlog/WIP; Feedback - baseline delivery/reliability and Sales themes; Learning - assess trust, no-blame charter, allocate 10% learning time before tooling. Weeks 3-5: Flow - frequent small commits, build/test pipeline; Feedback - required checks and staging telemetry; Learning - pair across roles, record experiments and review near misses. Weeks 6-8: Flow - small gated releases with rehearsed rollback; Feedback - production alerts, weekly metrics/support review; Learning - controlled staging resilience drill, published lessons and revisited WIP/gates. Weeks 9-12: Flow - conditional onboarding; Feedback - compare team metrics with the same definitions; Learning - peer-led transfer, runbook reuse and monthly community.\nChanges in content: add experiments, no-blame reviews and knowledge transfer. Changes in sequencing: learning/culture start before tools and scaling. Changes in effort: protect 10% of pilot allocation and adjust Sales commitments. Changes in involved people: CEO models culture, Sales provides demand/feedback, Dev/Test/Ops share delivery and specialist leads transfer practices across teams.\nHandover pack with role owners: transformation lead - map, charter, WIP policy and decision log; Sales - prioritized backlog; Dev - CI/configuration; Test - regression/all-app schema tests; database owner - compatible migrations and data recovery; Ops - releases, rollback, alerts and dashboards; Dev/Test - experiment log and learning index. A receiving team performs a staging release using the documents without the original author doing the steps; fix recorded gaps.\nWeek-12 CEO review: compare actual outcomes to the measured baseline, report sample counts and unresolved risks, demonstrate cross-team lesson reuse, and decide to scale, adjust or extend. Targets are proposals, not achievements. Risks: feature capacity drops (Sales reprioritizes); database coupling persists (compatibility checks); poor trust (CEO changes incentives/review behavior); inconclusive evidence (delay scaling). Sources: [1] COMP2013 Lab 2 DevOps, pp. 1-3; [2] COMP2013 Lecture 02, original slides 24, 27-44, 51-61. The supplied template controls slide formatting. The DevOps Handbook was recommended but not independently accessed."
+  }
+]

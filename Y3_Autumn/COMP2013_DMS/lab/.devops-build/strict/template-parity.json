@@ -1,0 +1,81 @@
+{
+  "source_sha256": "d573080d4f20e132ad06a133465a27842c989e90bb095b8c133d98156502eded",
+  "candidate_sha256": "340ad33f54fd873921162008ed4a3ec8eb71df356b8741618c454ebacba5013b",
+  "slide_count": 12,
+  "format_checks": [
+    {
+      "slide": 1,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 2,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 3,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 4,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 5,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 6,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 7,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 8,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 9,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 10,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 11,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    },
+    {
+      "slide": 12,
+      "shapes": 2,
+      "format_structure": "identical",
+      "existing_run_styles": "identical"
+    }
+  ],
+  "byte_identical_template_parts": 25,
+  "claim": "All original slide structures and paragraph properties match after removing text runs. Every original run style is unchanged. Added text in empty slots inherits the original paragraph end-run styling. Masters, layouts, themes and media are copied byte for byte."
+}

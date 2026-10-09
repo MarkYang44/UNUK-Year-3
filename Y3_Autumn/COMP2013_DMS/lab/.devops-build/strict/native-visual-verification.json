@@ -1,0 +1,59 @@
+{
+  "file": "/Users/markyang/Projects/UNUK-Year-3/Y3_Autumn/COMP2013_DMS/lab/output/COMP2013_Lab2_DevOps_StrictTemplate.pptx",
+  "sha256": "340ad33f54fd873921162008ed4a3ec8eb71df356b8741618c454ebacba5013b",
+  "native_application": "Microsoft PowerPoint for macOS",
+  "native_export": "/Users/markyang/Projects/UNUK-Year-3/Y3_Autumn/COMP2013_DMS/lab/.devops-build/strict/StrictNativeQA.pdf",
+  "native_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visual_findings": [],
+  "template_slide_count": 12,
+  "output_slide_count": 12,
+  "template_shapes_per_slide": 2,
+  "original_run_properties": "unchanged",
+  "paragraph_properties_and_shape_geometry": "unchanged",
+  "masters_layouts_themes": "byte-identical",
+  "coverage": {
+    "team": [
+      2
+    ],
+    "background": [
+      3
+    ],
+    "challenges_assumptions_implications": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "executable_plan": [
+      8,
+      9
+    ],
+    "evaluation": [
+      10
+    ],
+    "new_learning_actions": [
+      11
+    ],
+    "revised_plan": [
+      12
+    ]
+  },
+  "detailed_plan_location": "speaker notes",
+  "remaining_administrative_fields": [
+    "team name",
+    "team number"
+  ]
+}
