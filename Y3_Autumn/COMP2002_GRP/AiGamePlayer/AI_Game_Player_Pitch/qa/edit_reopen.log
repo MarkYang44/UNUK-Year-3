@@ -1,0 +1,52 @@
+00:00.273  blend            | Read blend: "/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/edit.blend"
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:72: DeprecationWarning: 'MovieStrip.frame_final_start' is expected to be removed in Blender 6.0
+  for f in range(t.frame_final_start,min(27601,t.frame_final_end)):covered[f-1]=1
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:72: DeprecationWarning: 'MovieStrip.frame_final_end' is expected to be removed in Blender 6.0
+  for f in range(t.frame_final_start,min(27601,t.frame_final_end)):covered[f-1]=1
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:83: DeprecationWarning: 'MovieStrip.frame_final_start' is expected to be removed in Blender 6.0
+  for i,t in enumerate(sorted(movies,key=lambda t:t.frame_final_start)):
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:84: DeprecationWarning: 'MovieStrip.frame_final_start' is expected to be removed in Blender 6.0
+  fs=[(t.frame_final_start+max(30,t.frame_final_duration//2),'shot_%02d'% (i+1))]
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:84: DeprecationWarning: 'MovieStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  fs=[(t.frame_final_start+max(30,t.frame_final_duration//2),'shot_%02d'% (i+1))]
+00:00.386  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_01.png'
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:85: DeprecationWarning: 'MovieStrip.frame_final_start' is expected to be removed in Blender 6.0
+  if i:fs.append((t.frame_final_start+18,'transition_%02d'%i))
+00:00.426  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_02.png'
+00:00.475  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_01.png'
+00:00.513  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_03.png'
+00:00.565  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_02.png'
+00:00.602  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_04.png'
+00:00.650  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_03.png'
+00:00.692  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_05.png'
+00:00.736  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_04.png'
+00:00.773  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_06.png'
+00:00.824  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_05.png'
+00:00.859  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_07.png'
+00:00.907  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_06.png'
+00:00.950  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_08.png'
+00:00.994  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_07.png'
+00:01.033  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_09.png'
+00:01.082  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_08.png'
+00:01.123  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_10.png'
+00:01.164  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_09.png'
+00:01.199  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_11.png'
+00:01.247  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_10.png'
+00:01.285  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_12.png'
+00:01.328  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_11.png'
+00:01.362  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_13.png'
+00:01.403  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_12.png'
+00:01.436  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_14.png'
+00:01.478  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_13.png'
+00:01.514  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_15.png'
+00:01.554  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_14.png'
+00:01.590  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_16.png'
+00:01.630  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_15.png'
+00:01.669  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_shot_17.png'
+00:01.716  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/edit_transition_16.png'
+UI framing note: Operator bpy.ops.sequencer.view_all.poll() failed, context is incorrect
+信息: 已另存为 "edit.blend"
+EDIT_REOPEN_PASS
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

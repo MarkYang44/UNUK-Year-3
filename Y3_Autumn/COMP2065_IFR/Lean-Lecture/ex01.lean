@@ -155,11 +155,11 @@ theorem q10 : (P ∨ Q ↔ P ∧ Q) ↔ (P ↔ Q) := by
   constructor
   · intro pq_pq
     cases pq_pq with
-    | intro forward backward =>
+    | intro pq_or pq_and =>
       constructor
       · intro p
         have pq : P ∧ Q := by
-          apply forward
+          apply pq_or
           left
           exact p
         cases pq with
@@ -167,7 +167,7 @@ theorem q10 : (P ∨ Q ↔ P ∧ Q) ↔ (P ↔ Q) := by
           exact q
       · intro q
         have pq : P ∧ Q := by
-          apply forward
+          apply pq_or
           right
           exact q
         cases pq with

@@ -1,0 +1,22 @@
+{
+  "full_decode_pass": true,
+  "frames_checked": 27600,
+  "seconds": 460,
+  "fps": 60,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "blank_frames": [],
+  "changed_frames": 19443,
+  "keyframe_hashes": {
+    "1": "03c6554da95e05e5a2d93e5d1de7abb40889c78930826b3a6667148cb349264f",
+    "901": "bce8dbe59cc77463c20df85e6130fac2137fc2bfe7519377412c97c23d06ddf8",
+    "2401": "55ffabd0158ded418d83d9016d8f7ac6ff58723af7e5fe5cf005ee33a4aed461",
+    "6901": "d4c243e3736e537698231331d0c35eaccd9e7db2f04d9ae0c639ce6755fe52e6",
+    "14101": "916523ad3a955c49d85bd585c7230add278b006cc2e8057a9a6b31d44034d57b",
+    "19201": "f90be70f5e25c0db90a79d3e6e470ad13841eeea99baf97f3477a0743cd709bf",
+    "24301": "90a62331a6d178baf1e44b87eb1d8cb2ad0be58f9df6029f03f19bee8566f3ed",
+    "27600": "285115d60ae5d8483536db456dc5c2f06fa8215ab420ec6a997e432f909f7f93"
+  }
+}

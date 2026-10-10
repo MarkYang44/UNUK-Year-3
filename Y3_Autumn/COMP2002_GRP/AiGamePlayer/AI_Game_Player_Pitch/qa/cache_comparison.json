@@ -1,0 +1,7 @@
+{
+  "max_pixel_delta": 0.47058820724487305,
+  "mean_pixel_delta": 3.8357091398211196e-05,
+  "pixels_compared": 8294400,
+  "method": "Blender renders original and cached VSE at frame 1900; all RGBA pixels compared. Mean absolute delta about 0.000038; sparse edge differences from image quantization and resampling. Visual layout inspected separately.",
+  "editable_source_untouched_by_export_cache": true
+}

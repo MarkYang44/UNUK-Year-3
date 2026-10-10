@@ -1,0 +1,343 @@
+1
+00:00:00,000 --> 00:00:01,117
+One move.
+
+2
+00:00:01,117 --> 00:00:02,217
+Two choices.
+
+3
+00:00:02,217 --> 00:00:10,550
+Would you move your pawn closer to the finish, or place a wall to slow
+
+4
+00:00:10,550 --> 00:00:12,217
+your opponent down?
+
+5
+00:00:12,217 --> 00:00:15,000
+Take a second to decide.
+
+6
+00:00:15,000 --> 00:00:17,083
+Moving looks like progress.
+
+7
+00:00:17,083 --> 00:00:21,250
+But a wall can change both players’ routes.
+
+8
+00:00:21,250 --> 00:00:25,417
+The better choice depends on what happens next.
+
+9
+00:00:25,417 --> 00:00:33,233
+That is the challenge behind our proposal: an AI opponent for Quoridor that makes decisions
+
+10
+00:00:33,233 --> 00:00:40,000
+under a time limit, while keeping the game enjoyable for a human player.
+
+11
+00:00:40,000 --> 00:00:41,783
+We are Team 26.
+
+12
+00:00:41,783 --> 00:00:48,450
+Our proposal brings together a rules-correct game, a Monte Carlo Tree Search opponent, selectable difficulty,
+
+13
+00:00:48,450 --> 00:00:50,667
+and a clear graphical interface.
+
+14
+00:00:50,667 --> 00:00:57,333
+We would also deliver software design documentation and a user manual, so someone else can
+
+15
+00:00:57,333 --> 00:01:00,000
+understand and run the finished game.
+
+16
+00:01:00,000 --> 00:01:08,933
+Team skills — pending confirmation.
+
+17
+00:01:08,933 --> 00:01:25,000
+Replace this section after the team confirms its experience.
+
+18
+00:01:25,000 --> 00:01:30,000
+Quoridor has a clear goal: reach the opposite edge.
+
+19
+00:01:30,000 --> 00:01:38,333
+Each turn offers movement or wall placement, but both players must retain a route to
+
+20
+00:01:38,333 --> 00:01:39,450
+their goal.
+
+21
+00:01:39,450 --> 00:01:43,883
+This creates strategic choices without a real-time interface.
+
+22
+00:01:43,883 --> 00:01:52,217
+Board Game Arena provides a digital reference; our focus would be a documented MCTS opponent
+
+23
+00:01:52,217 --> 00:01:55,000
+with difficulty we can evaluate.
+
+24
+00:01:55,000 --> 00:01:58,883
+So, how would the AI choose?
+
+25
+00:01:58,883 --> 00:02:04,717
+MCTS builds a search tree from the current position.
+
+26
+00:02:04,717 --> 00:02:14,450
+It selects a promising branch, expands a possible move, simulates what might happen, and sends
+
+27
+00:02:14,450 --> 00:02:18,333
+the result back through the tree.
+
+28
+00:02:18,333 --> 00:02:28,050
+Repeating this process helps it balance exploring new options with investigating moves that have performed
+
+29
+00:02:28,050 --> 00:02:30,000
+well so far.
+
+30
+00:02:30,000 --> 00:02:36,867
+We would start with standard MCTS, then compare random rollouts with simple route-aware rollouts.
+
+31
+00:02:36,867 --> 00:02:42,250
+Long simulations would have a cutoff and a documented path-distance estimate.
+
+32
+00:02:42,250 --> 00:02:49,600
+Wall placement creates a large branching factor, so we would profile the search and evaluate
+
+33
+00:02:49,600 --> 00:02:51,567
+candidate filtering if necessary.
+
+34
+00:02:51,567 --> 00:02:55,000
+The underlying game rules would remain unchanged.
+
+35
+00:02:55,000 --> 00:02:59,617
+The AI needs a reliable game underneath it.
+
+36
+00:02:59,617 --> 00:03:08,267
+Our rules module would handle legal pawn movement, wall conflicts, state transitions, and victory detection.
+
+37
+00:03:08,267 --> 00:03:16,917
+A graph-based check would reject any wall that removes either player’s route to their goal.
+
+38
+00:03:16,917 --> 00:03:25,000
+Separating the rules from search and presentation would let us test these behaviors independently.
+
+39
+00:03:25,000 --> 00:03:32,367
+We propose Java and JavaFX, with Maven for builds and JUnit for tests.
+
+40
+00:03:32,367 --> 00:03:37,450
+JavaFX suits the board interface and its visual feedback.
+
+41
+00:03:37,450 --> 00:03:45,950
+The AI would search copied game states in a background task with a bounded time
+
+42
+00:03:45,950 --> 00:03:46,517
+budget.
+
+43
+00:03:46,517 --> 00:03:55,000
+That separation should keep the interface responsive and prevent search from modifying the live board.
+
+44
+00:03:55,000 --> 00:04:03,650
+From the player’s perspective, the important questions are simple: what can I do, what just
+
+45
+00:04:03,650 --> 00:04:07,700
+happened, and how difficult is my opponent?
+
+46
+00:04:07,700 --> 00:04:16,350
+Our proposed interface would answer those through legal-move feedback, wall previews, and clear difficulty controls.
+
+47
+00:04:16,350 --> 00:04:19,800
+An unbeatable AI might be impressive.
+
+48
+00:04:19,800 --> 00:04:25,000
+An opponent you enjoy playing against is our goal.
+
+49
+00:04:25,000 --> 00:04:31,600
+Difficulty would initially use search budgets of point two, point five, and one second.
+
+50
+00:04:31,600 --> 00:04:35,383
+Those are starting values, not proven difficulty levels.
+
+51
+00:04:35,383 --> 00:04:40,567
+We would adjust them using measured playing strength and response time.
+
+52
+00:04:40,567 --> 00:04:47,633
+Giving the AI more time is useful only if the result creates a meaningful and
+
+53
+00:04:47,633 --> 00:04:50,000
+usable difference for the player.
+
+54
+00:04:50,000 --> 00:04:58,033
+We would compare difficulty levels and a movement-only shortest-path baseline, initially using one hundred games
+
+55
+00:04:58,033 --> 00:05:01,250
+per matchup with balanced first-player assignments.
+
+56
+00:05:01,250 --> 00:05:07,150
+We would report win rates, response times, and unfinished games separately.
+
+57
+00:05:07,150 --> 00:05:14,650
+Rules and integration tests would cover jumps, blocked paths, wall conflicts, restart, and victory.
+
+58
+00:05:14,650 --> 00:05:20,000
+This would give us evidence to explain our design decisions.
+
+59
+00:05:20,000 --> 00:05:29,050
+Our provisional milestones are a playable rules prototype by November, an MCTS baseline by December,
+
+60
+00:05:29,050 --> 00:05:38,100
+difficulty evaluation by February, and an integrated, tested game with documentation by April, ready for
+
+61
+00:05:38,100 --> 00:05:39,917
+the May showcase.
+
+62
+00:05:39,917 --> 00:05:47,150
+We would align these dates with module deadlines and the supervisor’s advice.
+
+63
+00:05:47,150 --> 00:05:55,000
+Each iteration would produce something demonstrable, rather than leaving integration until the end.
+
+64
+00:05:55,000 --> 00:06:02,217
+We propose paired ownership across rules, AI, GUI, and testing and documentation, with a lead
+
+65
+00:06:02,217 --> 00:06:04,617
+and reviewer for each area.
+
+66
+00:06:04,617 --> 00:06:07,983
+Assignments would follow the team’s confirmed skills.
+
+67
+00:06:07,983 --> 00:06:14,717
+Weekly meetings, a shared backlog, and reviewed pull requests would help us coordinate work.
+
+68
+00:06:14,717 --> 00:06:20,000
+Design notes and the user manual would develop alongside the software.
+
+69
+00:06:20,000 --> 00:06:27,983
+The main risks are limited MCTS experience, expensive wall validation, weak rollouts, and integration problems
+
+70
+00:06:27,983 --> 00:06:29,567
+alongside other coursework.
+
+71
+00:06:29,567 --> 00:06:37,550
+We would address these through early prototypes, profiling, bounded search budgets, paired learning, and regular
+
+72
+00:06:37,550 --> 00:06:38,083
+integration.
+
+73
+00:06:38,083 --> 00:06:45,000
+Our priority would be a correct, usable two-player game, before adding optional features.
+
+74
+00:06:45,000 --> 00:06:51,950
+We would check code and asset licenses, avoid unauthorized branding, and design the game without
+
+75
+00:06:51,950 --> 00:06:54,267
+player accounts or personal-data collection.
+
+76
+00:06:54,267 --> 00:06:57,967
+Clear feedback and accessible controls would support usability.
+
+77
+00:06:57,967 --> 00:07:04,900
+Any human playtesting would first be discussed with the supervisor for consent and ethics requirements.
+
+78
+00:07:04,900 --> 00:07:10,000
+We would also welcome guidance on search evaluation and game complexity.
+
+79
+00:07:10,000 --> 00:07:14,417
+Back to our opening question: move, or place a wall?
+
+80
+00:07:14,417 --> 00:07:18,817
+We do not want to guess which AI is better.
+
+81
+00:07:18,817 --> 00:07:25,433
+We want to build an opponent whose decisions, difficulty, and limitations we can test and
+
+82
+00:07:25,433 --> 00:07:25,883
+explain.
+
+83
+00:07:25,883 --> 00:07:32,500
+Choose Team 26 for a clear plan: a rules-correct game, a responsive interface, and an
+
+84
+00:07:32,500 --> 00:07:33,817
+evaluated MCTS opponent.
+
+85
+00:07:33,817 --> 00:07:39,117
+Our goal is an opponent that makes you think one move further.
+
+86
+00:07:39,117 --> 00:07:40,000
+Thank you.

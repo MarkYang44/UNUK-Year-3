@@ -1,0 +1,85 @@
+{
+  "official_rulebook": "https://export.gigamic.com/wp-content/uploads/2021/01/INS-RULES-QUORIDOR_10-2016.pdf",
+  "checks": [
+    {
+      "check": "Opening is reached by H e1-e2, AI e9-e8, with H to act",
+      "passed": true
+    },
+    {
+      "check": "Move alternative e2-e3 is legal",
+      "passed": true
+    },
+    {
+      "check": "Wall alternative h(4,5) legal and both routes retained",
+      "passed": true
+    },
+    {
+      "check": "Crossing wall rejected",
+      "passed": true
+    },
+    {
+      "check": "Overlapping wall rejected",
+      "passed": true
+    },
+    {
+      "check": "Existing rule fixture retains both routes",
+      "passed": true
+    },
+    {
+      "check": "Red proposed wall seals human route and is rejected",
+      "passed": true
+    },
+    {
+      "check": "Straight pawn jump legal",
+      "passed": true
+    },
+    {
+      "check": "Diagonal exception only when jump blocked",
+      "passed": true
+    },
+    {
+      "check": "Ordinary diagonal rejected",
+      "passed": true
+    },
+    {
+      "check": "Human_goal_guide shot 1 route obeys walls",
+      "passed": true
+    },
+    {
+      "check": "Move_guide shot 2 route obeys walls",
+      "passed": true
+    },
+    {
+      "check": "Wall_human_guide shot 2 route obeys walls",
+      "passed": true
+    },
+    {
+      "check": "Wall_AI_guide shot 2 route obeys walls",
+      "passed": true
+    },
+    {
+      "check": "Goal_route shot 5 route obeys walls",
+      "passed": true
+    },
+    {
+      "check": "Valid_human_route shot 8 route obeys walls",
+      "passed": true
+    },
+    {
+      "check": "Valid_AI_route shot 8 route obeys walls",
+      "passed": true
+    },
+    {
+      "check": "Return_to_opening shot 17 route obeys walls",
+      "passed": true
+    }
+  ],
+  "opening_history": [
+    "H e1-e2",
+    "AI e9-e8"
+  ],
+  "route_note": "Graph route guides; not a sequence of played pawn moves.",
+  "alternatives": "Independent move/wall alternatives with H to act.",
+  "wall_stock": "Opening and move: H10/AI10; wall branch: H9/AI10.",
+  "invalid_wall": "Red v(1,0), after h(0,1), seals the corner human route and is only a rejected preview."
+}

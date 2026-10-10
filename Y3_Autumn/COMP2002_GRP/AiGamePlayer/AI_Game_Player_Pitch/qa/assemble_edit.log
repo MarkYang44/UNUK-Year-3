@@ -1,0 +1,15 @@
+00:00.357  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/person_A_placeholder.png'
+00:00.408  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/person_B_placeholder.png'
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/assemble_edit.py:65: DeprecationWarning: 'MovieStrip.frame_duration' is expected to be removed in Blender 6.0
+  st.blend_type='ALPHA_OVER';assert st.frame_duration==b-a,(i,st.frame_duration,b-a)
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/assemble_edit.py:66: DeprecationWarning: 'MovieStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  st.frame_final_duration=b-a
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/assemble_edit.py:84: DeprecationWarning: 'SoundStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  v.frame_final_duration=vb-va;v.mute=True
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/assemble_edit.py:25: DeprecationWarning: 'ImageStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  x=seq.strips.new_image(name,str(path),ch,a);x.frame_final_duration=b-a;x.blend_type='ALPHA_OVER';return x
+Info: Saved as "edit.blend"
+EDIT_COMPLETE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

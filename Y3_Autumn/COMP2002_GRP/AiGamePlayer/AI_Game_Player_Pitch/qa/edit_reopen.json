@@ -1,0 +1,10 @@
+{
+  "missing": [],
+  "references": 55,
+  "all_exist": true,
+  "reopened": true,
+  "frame_coverage": 27600,
+  "movie_strips": 17,
+  "scene_strips": 0,
+  "transitions": 16
+}

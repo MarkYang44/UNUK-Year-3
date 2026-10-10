@@ -1,0 +1,9 @@
+00:00.340  blend            | Read blend: "/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/visuals.blend"
+00:00.359  blend            | Read blend: "/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/edit.blend"
+FINAL_DELIVERY_PASS
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/final_report.py:36: DeprecationWarning: 'ImageStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  st=s.sequence_editor.strips.new_image('Transition %02d'%(i+1),str(p),i+1,1);st.frame_final_duration=1;st.blend_type='ALPHA_OVER'
+00:00.900  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/all_transitions.png'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

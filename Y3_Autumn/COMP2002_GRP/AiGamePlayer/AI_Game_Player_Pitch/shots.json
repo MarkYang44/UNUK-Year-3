@@ -1,0 +1,189 @@
+[
+  {
+    "shot": 1,
+    "slide": 1,
+    "title": "One move changes everything",
+    "speaker": "A",
+    "start_seconds": 0,
+    "duration_seconds": 15,
+    "narration": "One move. Two choices. Would you move your pawn closer to the finish, or place a wall to slow your opponent down? Take a second to decide.",
+    "first_frame": 1,
+    "last_frame": 900
+  },
+  {
+    "shot": 2,
+    "slide": 1,
+    "title": "Move or wall?",
+    "speaker": "B",
+    "start_seconds": 15,
+    "duration_seconds": 25,
+    "narration": "Moving looks like progress. But a wall can change both players’ routes. The better choice depends on what happens next. That is the challenge behind our proposal: an AI opponent for Quoridor that makes decisions under a time limit, while keeping the game enjoyable for a human player.",
+    "first_frame": 901,
+    "last_frame": 2400
+  },
+  {
+    "shot": 3,
+    "slide": 2,
+    "title": "We are Team 26",
+    "speaker": "A",
+    "start_seconds": 40,
+    "duration_seconds": 20,
+    "narration": "We are Team 26. Our proposal brings together a rules-correct game, a Monte Carlo Tree Search opponent, selectable difficulty, and a clear graphical interface. We would also deliver software design documentation and a user manual, so someone else can understand and run the finished game.",
+    "first_frame": 2401,
+    "last_frame": 3600
+  },
+  {
+    "shot": 4,
+    "slide": 2,
+    "title": "Strengths into contributions",
+    "speaker": "A",
+    "start_seconds": 60,
+    "duration_seconds": 25,
+    "narration": "[Insert 40–50 words about the whole team’s confirmed skills and experience. Connect each strength to a project contribution. Suggested structure: “Our experience in … would support … . Members with … could contribute to … . Together, these strengths would help us … .”]",
+    "first_frame": 3601,
+    "last_frame": 5100
+  },
+  {
+    "shot": 5,
+    "slide": 2,
+    "title": "A simple goal. Difficult choices.",
+    "speaker": "B",
+    "start_seconds": 85,
+    "duration_seconds": 30,
+    "narration": "Quoridor has a clear goal: reach the opposite edge. Each turn offers movement or wall placement, but both players must retain a route to their goal. This creates strategic choices without a real-time interface. Board Game Arena provides a digital reference; our focus would be a documented MCTS opponent with difficulty we can evaluate.",
+    "first_frame": 5101,
+    "last_frame": 6900
+  },
+  {
+    "shot": 6,
+    "slide": 3,
+    "title": "How our AI would decide",
+    "speaker": "B",
+    "start_seconds": 115,
+    "duration_seconds": 35,
+    "narration": "So, how would the AI choose? MCTS builds a search tree from the current position. It selects a promising branch, expands a possible move, simulates what might happen, and sends the result back through the tree. Repeating this process helps it balance exploring new options with investigating moves that have performed well so far.",
+    "first_frame": 6901,
+    "last_frame": 9000
+  },
+  {
+    "shot": 7,
+    "slide": 3,
+    "title": "Two rollout approaches",
+    "speaker": "B",
+    "start_seconds": 150,
+    "duration_seconds": 25,
+    "narration": "We would start with standard MCTS, then compare random rollouts with simple route-aware rollouts. Long simulations would have a cutoff and a documented path-distance estimate. Wall placement creates a large branching factor, so we would profile the search and evaluate candidate filtering if necessary. The underlying game rules would remain unchanged.",
+    "first_frame": 9001,
+    "last_frame": 10500
+  },
+  {
+    "shot": 8,
+    "slide": 3,
+    "title": "A reliable game underneath",
+    "speaker": "A",
+    "start_seconds": 175,
+    "duration_seconds": 30,
+    "narration": "The AI needs a reliable game underneath it. Our rules module would handle legal pawn movement, wall conflicts, state transitions, and victory detection. A graph-based check would reject any wall that removes either player’s route to their goal. Separating the rules from search and presentation would let us test these behaviors independently.",
+    "first_frame": 10501,
+    "last_frame": 12300
+  },
+  {
+    "shot": 9,
+    "slide": 3,
+    "title": "Keep the interface responsive",
+    "speaker": "B",
+    "start_seconds": 205,
+    "duration_seconds": 30,
+    "narration": "We propose Java and JavaFX, with Maven for builds and JUnit for tests. JavaFX suits the board interface and its visual feedback. The AI would search copied game states in a background task with a bounded time budget. That separation should keep the interface responsive and prevent search from modifying the live board.",
+    "first_frame": 12301,
+    "last_frame": 14100
+  },
+  {
+    "shot": 10,
+    "slide": 4,
+    "title": "Challenge without the wait",
+    "speaker": "A",
+    "start_seconds": 235,
+    "duration_seconds": 30,
+    "narration": "From the player’s perspective, the important questions are simple: what can I do, what just happened, and how difficult is my opponent? Our proposed interface would answer those through legal-move feedback, wall previews, and clear difficulty controls. An unbeatable AI might be impressive. An opponent you enjoy playing against is our goal.",
+    "first_frame": 14101,
+    "last_frame": 15900
+  },
+  {
+    "shot": 11,
+    "slide": 4,
+    "title": "Difficulty we can calibrate",
+    "speaker": "B",
+    "start_seconds": 265,
+    "duration_seconds": 25,
+    "narration": "Difficulty would initially use search budgets of point two, point five, and one second. Those are starting values, not proven difficulty levels. We would adjust them using measured playing strength and response time. Giving the AI more time is useful only if the result creates a meaningful and usable difference for the player.",
+    "first_frame": 15901,
+    "last_frame": 17400
+  },
+  {
+    "shot": 12,
+    "slide": 4,
+    "title": "Evidence before claims",
+    "speaker": "A",
+    "start_seconds": 290,
+    "duration_seconds": 30,
+    "narration": "We would compare difficulty levels and a movement-only shortest-path baseline, initially using one hundred games per matchup with balanced first-player assignments. We would report win rates, response times, and unfinished games separately. Rules and integration tests would cover jumps, blocked paths, wall conflicts, restart, and victory. This would give us evidence to explain our design decisions.",
+    "first_frame": 17401,
+    "last_frame": 19200
+  },
+  {
+    "shot": 13,
+    "slide": 5,
+    "title": "A plan we can deliver",
+    "speaker": "B",
+    "start_seconds": 320,
+    "duration_seconds": 35,
+    "narration": "Our provisional milestones are a playable rules prototype by November, an MCTS baseline by December, difficulty evaluation by February, and an integrated, tested game with documentation by April, ready for the May showcase. We would align these dates with module deadlines and the supervisor’s advice. Each iteration would produce something demonstrable, rather than leaving integration until the end.",
+    "first_frame": 19201,
+    "last_frame": 21300
+  },
+  {
+    "shot": 14,
+    "slide": 5,
+    "title": "Shared ownership",
+    "speaker": "A",
+    "start_seconds": 355,
+    "duration_seconds": 25,
+    "narration": "We propose paired ownership across rules, AI, GUI, and testing and documentation, with a lead and reviewer for each area. Assignments would follow the team’s confirmed skills. Weekly meetings, a shared backlog, and reviewed pull requests would help us coordinate work. Design notes and the user manual would develop alongside the software.",
+    "first_frame": 21301,
+    "last_frame": 22800
+  },
+  {
+    "shot": 15,
+    "slide": 5,
+    "title": "Risks with a response",
+    "speaker": "B",
+    "start_seconds": 380,
+    "duration_seconds": 25,
+    "narration": "The main risks are limited MCTS experience, expensive wall validation, weak rollouts, and integration problems alongside other coursework. We would address these through early prototypes, profiling, bounded search budgets, paired learning, and regular integration. Our priority would be a correct, usable two-player game, before adding optional features.",
+    "first_frame": 22801,
+    "last_frame": 24300
+  },
+  {
+    "shot": 16,
+    "slide": 6,
+    "title": "Responsible by design",
+    "speaker": "A",
+    "start_seconds": 405,
+    "duration_seconds": 25,
+    "narration": "We would check code and asset licenses, avoid unauthorized branding, and design the game without player accounts or personal-data collection. Clear feedback and accessible controls would support usability. Any human playtesting would first be discussed with the supervisor for consent and ethics requirements. We would also welcome guidance on search evaluation and game complexity.",
+    "first_frame": 24301,
+    "last_frame": 25800
+  },
+  {
+    "shot": 17,
+    "slide": 6,
+    "title": "An opponent worth playing",
+    "speaker": "B / A",
+    "start_seconds": 430,
+    "duration_seconds": 30,
+    "narration": "Back to our opening question: move, or place a wall? We do not want to guess which AI is better. We want to build an opponent whose decisions, difficulty, and limitations we can test and explain. Choose Team 26 for a clear plan: a rules-correct game, a responsive interface, and an evaluated MCTS opponent. Our goal is an opponent that makes you think one move further. Thank you.",
+    "first_frame": 25801,
+    "last_frame": 27600
+  }
+]

@@ -1,0 +1,13 @@
+00:00.356  blend            | Read blend: "/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/visuals.blend"
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:44: DeprecationWarning: 'ColorStrip.frame_final_start' is expected to be removed in Blender 6.0
+  assert st.frame_final_start>=1,(s.name,st.name,st.frame_final_start)
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:44: DeprecationWarning: 'TextStrip.frame_final_start' is expected to be removed in Blender 6.0
+  assert st.frame_final_start>=1,(s.name,st.name,st.frame_final_start)
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/qa_and_finalize.py:44: DeprecationWarning: 'ImageStrip.frame_final_start' is expected to be removed in Blender 6.0
+  assert st.frame_final_start>=1,(s.name,st.name,st.frame_final_start)
+UI framing note: Operator bpy.ops.sequencer.view_all.poll() failed, context is incorrect
+信息: 已另存为 "visuals.blend"
+SOURCE_REOPEN_PASS
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

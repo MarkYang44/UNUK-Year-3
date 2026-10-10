@@ -1,0 +1,97 @@
+00:00.792  blend            | Read blend: "/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/visuals.blend"
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/cache_graphics.py:11: DeprecationWarning: 'ColorStrip.frame_final_start' is expected to be removed in Blender 6.0
+  kind=old.type;name=old.name;a=old.frame_final_start;b=old.frame_final_end;ch=old.channel
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/cache_graphics.py:11: DeprecationWarning: 'ColorStrip.frame_final_end' is expected to be removed in Blender 6.0
+  kind=old.type;name=old.name;a=old.frame_final_start;b=old.frame_final_end;ch=old.channel
+00:00.899  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/color_68b5b42487ae818f085d.png'
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/cache_graphics.py:47: DeprecationWarning: 'ImageStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  new=s.sequence_editor.strips.new_image(name,str(path),ch,a);new.frame_final_duration=b-a
+00:00.903  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/color_8145cbb76b459652a44c.png'
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/cache_graphics.py:11: DeprecationWarning: 'TextStrip.frame_final_start' is expected to be removed in Blender 6.0
+  kind=old.type;name=old.name;a=old.frame_final_start;b=old.frame_final_end;ch=old.channel
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/cache_graphics.py:11: DeprecationWarning: 'TextStrip.frame_final_end' is expected to be removed in Blender 6.0
+  kind=old.type;name=old.name;a=old.frame_final_start;b=old.frame_final_end;ch=old.channel
+00:00.983  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_7de5cbeeb0a32b1011ae.png'
+00:01.080  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_3586c1692b37c379d1b3.png'
+00:01.191  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_518edd05a5a6907cbab5.png'
+00:01.296  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_4e2a2d08414130b670c7.png'
+00:01.315  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/color_bb2859d035cc9040ff91.png'
+00:01.411  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_73439567871229deb9e2.png'
+00:01.424  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/color_1eb211b8f15ea196e85a.png'
+00:01.520  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_a75ae0ed83dfa6a562f8.png'
+00:01.635  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_55e19eba1d1612e46d68.png'
+00:01.744  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_0815a7744030e1ca49c9.png'
+00:01.836  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_675f0d099013284f6a77.png'
+00:01.850  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/color_097294e8ea6855f0d96d.png'
+00:01.979  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_86082f7ce613db0f3067.png'
+00:02.089  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_48150f57a7a907799e5b.png'
+00:02.212  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_871b7224b31718d0f101.png'
+00:02.310  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_431b03a001a05eb5e26c.png'
+00:02.384  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_88399e64966fef2f6b70.png'
+00:02.470  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/export_cache/text_9e77f3cc794dd403bdb7.png'
+CACHED_SCENE S06_SLIDE3_How_our_AI_would_decide 40
+00:02.832  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/qa/cached_06.png'
+00:02.906  render           | Video append frame 180
+00:03.056  render           | Video append frame 181
+00:03.187  render           | Video append frame 182
+00:03.359  render           | Video append frame 183
+00:03.458  render           | Video append frame 184
+00:03.544  render           | Video append frame 185
+00:03.663  render           | Video append frame 186
+00:03.782  render           | Video append frame 187
+00:03.937  render           | Video append frame 188
+00:04.042  render           | Video append frame 189
+00:04.135  render           | Video append frame 190
+00:04.277  render           | Video append frame 191
+00:04.389  render           | Video append frame 192
+00:04.497  render           | Video append frame 193
+00:04.612  render           | Video append frame 194
+00:04.692  render           | Video append frame 195
+00:04.758  render           | Video append frame 196
+00:04.865  render           | Video append frame 197
+00:04.968  render           | Video append frame 198
+00:05.080  render           | Video append frame 199
+00:05.210  render           | Video append frame 200
+00:05.287  render           | Video append frame 201
+00:05.363  render           | Video append frame 202
+00:05.483  render           | Video append frame 203
+00:05.586  render           | Video append frame 204
+00:05.701  render           | Video append frame 205
+00:05.829  render           | Video append frame 206
+00:05.912  render           | Video append frame 207
+00:05.992  render           | Video append frame 208
+00:06.124  render           | Video append frame 209
+00:06.254  render           | Video append frame 210
+00:06.343  render           | Video append frame 211
+00:06.439  render           | Video append frame 212
+00:06.536  render           | Video append frame 213
+00:06.606  render           | Video append frame 214
+00:06.729  render           | Video append frame 215
+00:06.825  render           | Video append frame 216
+00:06.924  render           | Video append frame 217
+00:07.037  render           | Video append frame 218
+00:07.104  render           | Video append frame 219
+00:07.180  render           | Video append frame 220
+00:07.277  render           | Video append frame 221
+00:07.385  render           | Video append frame 222
+00:07.462  render           | Video append frame 223
+00:07.565  render           | Video append frame 224
+00:07.673  render           | Video append frame 225
+00:07.740  render           | Video append frame 226
+00:07.818  render           | Video append frame 227
+00:07.903  render           | Video append frame 228
+00:08.006  render           | Video append frame 229
+00:08.093  render           | Video append frame 230
+00:08.180  render           | Video append frame 231
+00:08.290  render           | Video append frame 232
+00:08.355  render           | Video append frame 233
+00:08.426  render           | Video append frame 234
+00:08.523  render           | Video append frame 235
+00:08.618  render           | Video append frame 236
+00:08.711  render           | Video append frame 237
+00:08.796  render           | Video append frame 238
+00:08.910  render           | Video append frame 239
+CACHED_BENCHMARK 6.161380052566528
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

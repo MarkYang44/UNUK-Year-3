@@ -1,0 +1,18 @@
+00:00.408  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_base.png'
+00:00.669  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_clean.png'
+00:00.764  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_clean.png'
+00:01.022  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_opening.png'
+00:01.274  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_move.png'
+00:01.536  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_wall.png'
+00:01.606  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_human_sprite.png'
+00:01.670  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_ai_sprite.png'
+00:01.924  render           | Saved: '/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/assets/board_rule_fixture.png'
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/build.py:222: DeprecationWarning: 'ImageStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  st=s.sequence_editor.strips.new_image(name,path,ch,start);st.frame_final_duration=(end or s.frame_end+1)-start
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/build.py:224: DeprecationWarning: 'ImageStrip.frame_final_end' is expected to be removed in Blender 6.0
+  alpha(st,start,st.frame_final_end,fade);return st
+Info: Saved as "visuals.blend"
+BUILD_COMPLETE /Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

@@ -1,0 +1,34 @@
+00:00.834  blend            | Read blend: "/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/edit.blend"
+import_recordings.py:46: DeprecationWarning: 'SoundStrip.frame_final_start' is expected to be removed in Blender 6.0
+import_recordings.py:46: DeprecationWarning: 'SoundStrip.frame_final_duration' is expected to be removed in Blender 6.0
+import_recordings.py:67: DeprecationWarning: 'SoundStrip.frame_duration' is expected to be removed in Blender 6.0
+import_recordings.py:68: DeprecationWarning: 'SoundStrip.frame_final_duration' is expected to be removed in Blender 6.0
+import_recordings.py:46: DeprecationWarning: 'ImageStrip.frame_final_start' is expected to be removed in Blender 6.0
+import_recordings.py:46: DeprecationWarning: 'ImageStrip.frame_final_duration' is expected to be removed in Blender 6.0
+import_recordings.py:67: DeprecationWarning: 'MovieStrip.frame_duration' is expected to be removed in Blender 6.0
+import_recordings.py:68: DeprecationWarning: 'MovieStrip.frame_final_duration' is expected to be removed in Blender 6.0
+import_recordings.py:23: DeprecationWarning: 'MovieStrip.frame_duration' is expected to be removed in Blender 6.0
+00:01.009  render           | Video append frame 1
+00:01.031  render           | Video append frame 2
+00:01.047  render           | Video append frame 3
+00:01.066  render           | Video append frame 4
+00:01.088  render           | Video append frame 5
+00:01.106  render           | Video append frame 6
+00:01.126  render           | Video append frame 7
+00:01.145  render           | Video append frame 8
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/test_import.py:12: DeprecationWarning: 'MovieStrip.frame_final_start' is expected to be removed in Blender 6.0
+  assert cam.frame_final_start==2401 and cam.frame_final_duration==1200
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/test_import.py:12: DeprecationWarning: 'MovieStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  assert cam.frame_final_start==2401 and cam.frame_final_duration==1200
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/test_import.py:13: DeprecationWarning: 'SoundStrip.frame_final_start' is expected to be removed in Blender 6.0
+  assert voice.frame_final_start==2401 and voice.frame_final_duration==1200
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/test_import.py:13: DeprecationWarning: 'SoundStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  assert voice.frame_final_start==2401 and voice.frame_final_duration==1200
+/Users/zhb/Documents/Codex/yang/AI_Game_Player_Pitch/scripts/test_import.py:14: DeprecationWarning: 'MovieStrip.frame_final_duration' is expected to be removed in Blender 6.0
+  assert short.frame_final_duration==8
+SHORT RECORDING: S17_A; adjust shot timing or supply a longer take.
+Imported 3 recordings. Save a new edit version after checking alignment.
+RECORDING_IMPORT_PASS
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

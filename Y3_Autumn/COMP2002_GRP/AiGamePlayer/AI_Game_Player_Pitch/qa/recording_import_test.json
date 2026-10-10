@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "memory_only_no_edit_saved": true,
+  "tested": [
+    "audio placeholder replacement",
+    "movie placeholder replacement",
+    "duo\u2192single movement keys preserved",
+    "60fps 1080p framing",
+    "30fps retimed to 60fps at original speed",
+    "short-take warning",
+    "small-source framing scaled correctly"
+  ]
+}

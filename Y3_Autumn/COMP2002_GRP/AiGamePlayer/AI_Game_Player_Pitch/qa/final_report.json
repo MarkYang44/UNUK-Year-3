@@ -1,0 +1,161 @@
+{
+  "visuals_reopen": {
+    "missing": [],
+    "references": 12,
+    "all_exist": true,
+    "reopened": true,
+    "shots": 17,
+    "main_slides": 6,
+    "version": "5.2.2 LTS",
+    "all_fonts_embedded": true
+  },
+  "edit_reopen": {
+    "missing": [],
+    "references": 55,
+    "all_exist": true,
+    "reopened": true,
+    "frame_coverage": 27600,
+    "movie_strips": 17,
+    "scene_strips": 0,
+    "transitions": 16
+  },
+  "preview_playback": {
+    "full_decode_pass": true,
+    "frames_checked": 27600,
+    "seconds": 460,
+    "fps": 60,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "blank_frames": [],
+    "changed_frames": 19443,
+    "keyframe_hashes": {
+      "1": "03c6554da95e05e5a2d93e5d1de7abb40889c78930826b3a6667148cb349264f",
+      "901": "bce8dbe59cc77463c20df85e6130fac2137fc2bfe7519377412c97c23d06ddf8",
+      "2401": "55ffabd0158ded418d83d9016d8f7ac6ff58723af7e5fe5cf005ee33a4aed461",
+      "6901": "d4c243e3736e537698231331d0c35eaccd9e7db2f04d9ae0c639ce6755fe52e6",
+      "14101": "916523ad3a955c49d85bd585c7230add278b006cc2e8057a9a6b31d44034d57b",
+      "19201": "f90be70f5e25c0db90a79d3e6e470ad13841eeea99baf97f3477a0743cd709bf",
+      "24301": "90a62331a6d178baf1e44b87eb1d8cb2ad0be58f9df6029f03f19bee8566f3ed",
+      "27600": "285115d60ae5d8483536db456dc5c2f06fa8215ab420ec6a997e432f909f7f93"
+    }
+  },
+  "recording_import_test": {
+    "passed": true,
+    "memory_only_no_edit_saved": true,
+    "tested": [
+      "audio placeholder replacement",
+      "movie placeholder replacement",
+      "duo→single movement keys preserved",
+      "60fps 1080p framing",
+      "30fps retimed to 60fps at original speed",
+      "short-take warning",
+      "small-source framing scaled correctly"
+    ]
+  },
+  "rules_validation": {
+    "official_rulebook": "https://export.gigamic.com/wp-content/uploads/2021/01/INS-RULES-QUORIDOR_10-2016.pdf",
+    "checks": [
+      {
+        "check": "Opening is reached by H e1-e2, AI e9-e8, with H to act",
+        "passed": true
+      },
+      {
+        "check": "Move alternative e2-e3 is legal",
+        "passed": true
+      },
+      {
+        "check": "Wall alternative h(4,5) legal and both routes retained",
+        "passed": true
+      },
+      {
+        "check": "Crossing wall rejected",
+        "passed": true
+      },
+      {
+        "check": "Overlapping wall rejected",
+        "passed": true
+      },
+      {
+        "check": "Existing rule fixture retains both routes",
+        "passed": true
+      },
+      {
+        "check": "Red proposed wall seals human route and is rejected",
+        "passed": true
+      },
+      {
+        "check": "Straight pawn jump legal",
+        "passed": true
+      },
+      {
+        "check": "Diagonal exception only when jump blocked",
+        "passed": true
+      },
+      {
+        "check": "Ordinary diagonal rejected",
+        "passed": true
+      },
+      {
+        "check": "Human_goal_guide shot 1 route obeys walls",
+        "passed": true
+      },
+      {
+        "check": "Move_guide shot 2 route obeys walls",
+        "passed": true
+      },
+      {
+        "check": "Wall_human_guide shot 2 route obeys walls",
+        "passed": true
+      },
+      {
+        "check": "Wall_AI_guide shot 2 route obeys walls",
+        "passed": true
+      },
+      {
+        "check": "Goal_route shot 5 route obeys walls",
+        "passed": true
+      },
+      {
+        "check": "Valid_human_route shot 8 route obeys walls",
+        "passed": true
+      },
+      {
+        "check": "Valid_AI_route shot 8 route obeys walls",
+        "passed": true
+      },
+      {
+        "check": "Return_to_opening shot 17 route obeys walls",
+        "passed": true
+      }
+    ],
+    "opening_history": [
+      "H e1-e2",
+      "AI e9-e8"
+    ],
+    "route_note": "Graph route guides; not a sequence of played pawn moves.",
+    "alternatives": "Independent move/wall alternatives with H to act.",
+    "wall_stock": "Opening and move: H10/AI10; wall branch: H9/AI10.",
+    "invalid_wall": "Red v(1,0), after h(0,1), seals the corner human route and is only a rejected preview."
+  },
+  "delivered": {
+    "visuals": "visuals.blend",
+    "edit": "edit.blend",
+    "preview": "preview/AI_Game_Player_Pitch_no_voice.mp4",
+    "rendered_clips": 17,
+    "extendable_holds": 17,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 60,
+    "seconds": 460,
+    "all_relative_media_paths": true,
+    "original_documents_unchanged": true,
+    "latest_engineering_notes_reopened": true,
+    "no_voice_or_person_generated": true,
+    "only_blender_production": true,
+    "pending": "Authentic narration and presenter footage; confirmed team skill narration for shot 04; final subtitle synchronization."
+  }
+}
